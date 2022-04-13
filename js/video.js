@@ -1,8 +1,7 @@
 var video = document.querySelector('#player1');
 /*var video= document.querySelector('#player1');*/
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
-	
+	console.log("Good job opening the window");
 	video.autoplay=false;
 	video.loop= false;
 
@@ -11,7 +10,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 console.log("Play Video");
 video.play();
-document.querySelector("#volumn").innerHTML = video.volumn * 100 + "1";
+document.querySelector("#volumn").innerHTML = video.volumn * 100 + "%";
 
 });
 
@@ -29,7 +28,7 @@ document.querySelector("#slower").addEventListener("click", function(){
 document.querySelector("#faster").addEventListener("click", function(){
 	console.log('speeding up');
 	video.playbackRate /= 0.95;
-	console.log('sped is', video.playbackRate);
+	console.log('spead is', video.playbackRate);
 });
 document.querySelector("#skip").addEventListener("click", function(){
 	video.currentTime += 15;
