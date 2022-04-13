@@ -7,10 +7,10 @@ window.addEventListener("load", function() {
 
 });
 
-document.querySelector("#play").addEventListener("click", function() {
-console.log("Play Video");
-video.play();
-document.querySelector("#volumn").innerHTML = video.volumn * 100 + "%";
+document.querySelector('#play').addEventListener("click", function() {
+	console.log('Play Video');
+	video.play();
+	document.querySelector("#volumn").innerHTML = video.volume * 100 + "%";
 
 });
 
